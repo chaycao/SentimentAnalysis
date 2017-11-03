@@ -30,7 +30,7 @@ training_info_filePath = "./data/training.info"
 training_data_filePath = "./data/training.data"
 modelPath = "./data/keras_model"
 weightPath = "./data/keras_model_weights"
-word2vec_model_file = "./data/word2vec.model"
+word2vec_model_file = "./data/word2vec-128.model"
 
 print ('Loading vocab...')
 start_time = time.time()

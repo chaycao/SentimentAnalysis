@@ -54,7 +54,7 @@ def loadTrainingInfo(path):
 training_info_filePath = "./data/training.info"
 modelPath = "./data/keras_model"
 weightPath = "./data/keras_model_weights"
-word2vec_model_file = "./data/word2vec.model"
+word2vec_model_file = "./data/word2vec-100.model"
 trainingInfo = loadTrainingInfo(training_info_filePath)
 print ('Load vocab Done!')
 print ('Training model...')
@@ -65,6 +65,7 @@ start_time = time.time()
 vocabSize = len(vocab) + 1
 w2vModel = Word2Vec.load(word2vec_model_file)
 embeddingDim = w2vModel.vector_size
+print('词向量：'+embeddingDim)
 embeddingUnknown = [0 for i in range(embeddingDim)]
 embeddingWeights = np.zeros((vocabSize + 1, embeddingDim))
 for word, index in vocab.items():
@@ -76,6 +77,7 @@ for word, index in vocab.items():
 
 # 训练
 for i in range(10):
+    print("------- "+str(i+1)+"次 -------")
     #i的序号为测试集的序号，其余为训练集
     Train_X = []
     Train_Y = []
@@ -99,7 +101,7 @@ for i in range(10):
     model.add(Bidirectional(LSTM(output_dim=100, return_sequences=False), merge_mode='sum'))
     model.add(Dropout(0.5))
     model.add(Dense(1, activation="sigmoid"))
-    # print(model.summary())
+    print(model.summary())
 
     # 自定义f1值
     def recall(y_true, y_pred):
@@ -177,11 +179,12 @@ for i in range(10):
 
     metrics = Metrics()
 
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['binary_accuracy', recall, precision, f1])
-    early_stopping = EarlyStopping(monitor="val_acc", patience=3)
+    model.compile(loss="binary_crossentropy", optimizer='adam', metrics=[recall, precision, f1])
+    
+    early_stopping = EarlyStopping(monitor="val_f1", patience=3, mode='max')
     result = model.fit(Train_X, Train_Y, batch_size=128,
-                       epochs=5,
-                       validation_data=(Test_X, Test_Y))
-                       #callbacks=[])
+                       epochs=100,
+                       validation_data=(Test_X, Test_Y),
+                       callbacks=[early_stopping])
     #sys.stdout.flush()
 #sys.stdout.close()

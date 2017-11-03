@@ -101,11 +101,11 @@ def merge():
 
 def word2vec():
     start_time = time.time()
-    input_file = 'all.txt'
-    output_model_file = 'word2vec.model'
-    output_vector_file = 'word2vec.vector'
+    input_file = './data/all.txt'
+    output_model_file = './data/word2vec-100.model'
+    output_vector_file = './data/word2vec-100.vector'
 
-    model = Word2Vec(LineSentence(input_file), size=128, window=5, min_count=5,
+    model = Word2Vec(LineSentence(input_file), size=100, window=5, min_count=5,
                      workers=multiprocessing.cpu_count())
 
     # trim unneeded model memory = use(much) less RAM
@@ -116,6 +116,7 @@ def word2vec():
     end_time = time.time()
     print("used time : %d s" % (end_time - start_time))
 
+word2vec()
 #-------------------------- 词典统计 --------------------------------------------------#
 
 retain_unknown = 'retain-unknown'
@@ -247,5 +248,3 @@ def dictGenerate():
     saveTrainingData(training_data_filePath, X)
     end_time = time.time()
     print("used time : %d s" % (end_time - start_time))
-
-dictGenerate()
