@@ -16,8 +16,10 @@ from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
-from keras.callbacks import EarlyStopping
+from keras.callbacks import EarlyStopping,Callback
+from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 import sys
+from keras import backend as K
 
 def loadTrainingData(path):
     '''载入分词训练输入样本'''
@@ -44,9 +46,9 @@ def loadTrainingInfo(path):
     return (vocab, indexVocab)
 
 # 标准输出重定向至文件
-savedStdout = sys.stdout
-file = open('out.txt', 'w+')
-sys.stdout = file
+#savedStdout = sys.stdout
+#file = open('out.txt', 'w+')
+#sys.stdout = file
 
 # 加载词库
 training_info_filePath = "./data/training.info"
@@ -98,11 +100,88 @@ for i in range(10):
     model.add(Dropout(0.5))
     model.add(Dense(1, activation="sigmoid"))
     # print(model.summary())
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=["accuracy"])
+
+    # 自定义f1值
+    def recall(y_true, y_pred):
+        """Recall metric.
+
+        Only computes a batch-wise average of recall.
+
+        Computes the recall, a metric for multi-label classification of
+        how many relevant items are selected.
+        """
+        true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+        possible_positives = K.sum(K.round(K.clip(y_true, 0, 1)))
+        recall = true_positives / (possible_positives + K.epsilon())
+        return recall
+
+    def precision(y_true, y_pred):
+        """Precision metric.
+
+        Only computes a batch-wise average of precision.
+
+        Computes the precision, a metric for multi-label classification of
+        how many selected items are relevant.
+        """
+        true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+        predicted_positives = K.sum(K.round(K.clip(y_pred, 0, 1)))
+        precision = true_positives / (predicted_positives + K.epsilon())
+        return precision
+
+    def f1(y_true, y_pred):
+        def precision(y_true, y_pred):
+            """Precision metric.
+
+            Only computes a batch-wise average of precision.
+
+            Computes the precision, a metric for multi-label classification of
+            how many selected items are relevant.
+            """
+            true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+            predicted_positives = K.sum(K.round(K.clip(y_pred, 0, 1)))
+            precision = true_positives / (predicted_positives + K.epsilon())
+            return precision
+        def recall(y_true, y_pred):
+            """Recall metric.
+
+            Only computes a batch-wise average of recall.
+
+            Computes the recall, a metric for multi-label classification of
+            how many relevant items are selected.
+            """
+            true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+            possible_positives = K.sum(K.round(K.clip(y_true, 0, 1)))
+            recall = true_positives / (possible_positives + K.epsilon())
+            return recall
+        precision = precision(y_true, y_pred)
+        recall = recall(y_true, y_pred)
+        return 2 * ((precision * recall) / (precision + recall))
+
+
+    class Metrics(Callback):
+        def on_train_begin(self, logs={}):
+            self.val_f1s = []
+            self.val_recalls = []
+            self.val_precisions = []
+        def on_epoch_end(self, epoch, logs={}):
+            val_predict = (np.asarray(self.model.predict(self.model.validation_data[0]))).round()
+            val_targ = self.model.validation_data[1]
+            _val_f1 = f1_score(val_targ, val_predict)
+            _val_recall = recall_score(val_targ, val_predict)
+            _val_precision = precision_score(val_targ, val_predict)
+            self.val_f1s.append(_val_f1)
+            self.val_recalls.append(_val_recall)
+            self.val_precisions.append(_val_precision)
+            print (" — val_f1: % f — val_precision: % f — val_recall % f" % (_val_f1, _val_precision, _val_recall))
+            return
+
+    metrics = Metrics()
+
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['binary_accuracy', recall, precision, f1])
     early_stopping = EarlyStopping(monitor="val_acc", patience=3)
     result = model.fit(Train_X, Train_Y, batch_size=128,
-                       epochs=100,
-                       validation_data=(Test_X, Test_Y),
-                       callbacks=[early_stopping])
-    sys.stdout.flush()
-sys.stdout.close()
+                       epochs=5,
+                       validation_data=(Test_X, Test_Y))
+                       #callbacks=[])
+    #sys.stdout.flush()
+#sys.stdout.close()
