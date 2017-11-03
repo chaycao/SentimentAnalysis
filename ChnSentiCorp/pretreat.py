@@ -31,8 +31,8 @@ from gensim.models import Word2Vec
 把6000的各个文件变成一个文本
 '''
 def generate():
-    filepath = 'E:\\PycharmProjects\\SentimentAnalysis\\ChnSentiCorp\\6000\\neg\\'
-    outpath = 'neg.txt'
+    filepath = './6000/neg/'
+    outpath = 'neg_test.txt'
     pathDir = os.listdir(filepath)
     outFile = codecs.open(outpath, 'w', 'utf-8')
     for allDir in pathDir:
@@ -47,7 +47,7 @@ def generate():
         inFile.close()
     outFile.close()
 
-generate()
+# generate()
 
 def cut():
     inFile = codecs.open('./data/neg.txt','r','utf-8')
@@ -120,19 +120,6 @@ def word2vec():
 
 retain_unknown = 'retain-unknown'
 retain_empty = 'retain-empty' # 用于填充
-
-def dictGenerate():
-    start_time = time.time()
-    input_file = "./data/all.txt"
-    training_info_filePath = "./data/training.info"
-    training_data_filePath = "./data/training.data"
-    X, (vocab, indexVocab) = load(input_file)
-    # TrainInfo：词向量和词典的相关情况
-    saveTrainingInfo(training_info_filePath, (vocab, indexVocab))
-    # TrainData：将字表示为向量和标记
-    saveTrainingData(training_data_filePath, X)
-    end_time = time.time()
-    print("used time : %d s" % (end_time - start_time))
 
 def saveTrainingData(path, trainingData):
     '''保存分词训练输入样本'''
@@ -246,3 +233,19 @@ def loadTrainingData(path):
     X = fd['X'][:]
     fd.close()
     return X
+
+
+def dictGenerate():
+    start_time = time.time()
+    input_file = "./data/all.txt"
+    training_info_filePath = "./data/training.info"
+    training_data_filePath = "./data/training.data"
+    X, (vocab, indexVocab) = load(input_file)
+    # TrainInfo：词向量和词典的相关情况
+    saveTrainingInfo(training_info_filePath, (vocab, indexVocab))
+    # TrainData：将字表示为向量和标记
+    saveTrainingData(training_data_filePath, X)
+    end_time = time.time()
+    print("used time : %d s" % (end_time - start_time))
+
+dictGenerate()
