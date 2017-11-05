@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 import os
 import codecs
 import jieba
@@ -23,80 +22,6 @@ from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
 from keras.callbacks import EarlyStopping
-
-
-
-'''
-把6000的各个文件变成一个文本
-'''
-def generate():
-    filepath = './6000/neg/'
-    outpath = 'neg_test.txt'
-    pathDir = os.listdir(filepath)
-    outFile = codecs.open(outpath, 'w', 'utf-8')
-    for allDir in pathDir:
-        child = os.path.join('%s%s' % (filepath, allDir))
-        inFile = codecs.open(child, 'r', 'utf-8')
-        for eachLine in inFile:
-            eachLine = eachLine.strip()
-            if len(eachLine) != 0 :
-                outFile.write(eachLine)
-        outFile.write('\n')
-        outFile.flush()
-        inFile.close()
-    outFile.close()
-
-# generate()
-
-def cut():
-    inFile = codecs.open('./data/neg.txt','r','utf-8')
-    outFile = codecs.open('./data/neg_cut.txt','w','utf-8')
-    for line in inFile:
-        seg_list = jieba.cut(line, cut_all=False)
-        out = re.sub(r"\s{2,}", " ", " ".join(seg_list))
-        outFile.write(out+"\n")
-    inFile.close()
-    outFile.close()
-
-
-'''
-neg:
-max: 1761
-avg:107.459
-
-pos:
-max: 717
-avg:66.265
-'''
-def analyze():
-    file = codecs.open('pos_cut.txt','r','utf-8')
-    max = 0
-    count = 0
-    for line in file:
-        length = len(line.split(" "))
-        if (length > max):
-            max = length
-        count += length
-    print('max: ' + str(max))
-    print('avg:' + str(count/3000))
-    file.close()
-
-def merge():
-    file_pos = codecs.open('pos_cut.txt', 'r', 'utf-8')
-    file_neg = codecs.open('neg_cut.txt', 'r', 'utf-8')
-    outFile = codecs.open('all.txt', 'w', 'utf-8')
-    for line in file_pos:
-        line = line.strip()
-        if (len(line) > 0):
-            line = line[0:128]
-            print(len(line))
-            outFile.write(line + '\n')
-    for line in file_neg:
-        line = line.strip()
-        if (len(line) > 0):
-            line = line[0:128]
-            print(len(line))
-            outFile.write(line + '\n')
 
 #-------------------------- 词典统计 --------------------------------------------------#
 
@@ -122,9 +47,11 @@ def sent2vec2(sent, vocab, num):
     # 填充到指定长度
     while len(charVec) < num:
         charVec.append(vocab[retain_empty])
+    # 取maxlen
+    charVec = charVec[:num]
     return charVec
 
-def doc2vec(fname, vocab):
+def doc2vec(fname, vocab, maxlen):
     #一次性读入文件，注意内存
     fd = codecs.open(fname, 'r', 'utf-8')
     lines = fd.readlines()
@@ -140,7 +67,7 @@ def doc2vec(fname, vocab):
         for word in words:
             chars.append(word)
         #将句子转成词向量，长度短的，填充到指定长度
-        lineVecX = sent2vec2(chars, vocab, 128)
+        lineVecX = sent2vec2(chars, vocab, maxlen)
         # 理论上说，X应该都是128维的
         X.extend(lineVecX)
     return X
@@ -175,11 +102,11 @@ def genVocab(fname, delimiters = [' ', '\n']):
     #返回字典与索引
     return vocab, indexVocab
 
-def load(fname):
+def load(fname, maxlen):
     print ('train from file', fname)
     delims = [' ', '\n']
     vocab, indexVocab = genVocab(fname)
-    X = doc2vec(fname, vocab)
+    X = doc2vec(fname, vocab, maxlen)
     print (len(X))
     return X, (vocab, indexVocab)
 
@@ -216,16 +143,18 @@ def loadTrainingData(path):
     fd.close()
     return X
 
-
-def dictGenerate():
+def dictGenerate(maxlen):
     start_time = time.time()
-    input_file = "./data/all.txt"
-    training_info_filePath = "./data/training.info"
-    training_data_filePath = "./data/training.data"
-    X, (vocab, indexVocab) = load(input_file)
+    input_file = "./data/seg/all_cut.txt"
+    training_info_filePath = "./data/trainData/training-" + str(maxlen) + ".info"
+    training_data_filePath = "./data/trainData/training-" + str(maxlen) + ".data"
+    print("maxlen:" + str(maxlen))
+    X, (vocab, indexVocab) = load(input_file, maxlen)
     # TrainInfo：词向量和词典的相关情况
     saveTrainingInfo(training_info_filePath, (vocab, indexVocab))
     # TrainData：将字表示为向量和标记
     saveTrainingData(training_data_filePath, X)
     end_time = time.time()
     print("used time : %d s" % (end_time - start_time))
+
+dictGenerate(150)

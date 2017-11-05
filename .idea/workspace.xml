@@ -2,13 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf04879-a74a-4335-bf78-0c1c15122140" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/result/结果.xlsx" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/result/结果.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-100.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-100.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-125.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-125.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-150.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-150.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-50.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-50.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-75.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-75.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-75.model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/中文停用词库.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/哈工大停用词表.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/四川大学机器智能实验室停用词库.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/百度停用词列表.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-150.model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-200.model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-250.model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-50.model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/dataAnalyze.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/segProcess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/stopwords.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/all.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/neg_cut.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/pos_cut.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/training.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/training.info" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.vector" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/0.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/0.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/1.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/1.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/2.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/2.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/3.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/3.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/4.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/4.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/5.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/5.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/6.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/6.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/7.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/7.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/8.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/8.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/9.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/9.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all-128.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training-shuffle.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/shuffledata/training-shuffle-128.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training.info" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.info" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-100.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-100.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-128.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-128.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/neg.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/seg/neg.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/pos.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/seg/pos.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-100.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-100.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-100.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-100.vector" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-128.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-128.vector" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-150.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-150.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-150.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-150.vector" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-200.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-200.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-200.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-200.vector" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-250.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-250.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-250.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-250.vector" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-50.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-50.model" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-50.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-50.vector" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,12 +75,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$train.coverage" NAME="train Coverage Results" MODIFIED="1509680076539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat.coverage" NAME="pretreat Coverage Results" MODIFIED="1509848775050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$stopwords.coverage" NAME="stopwords Coverage Results" MODIFIED="1509871141233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$segProcess.coverage" NAME="segProcess Coverage Results" MODIFIED="1509879140498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$shullfer.coverage" NAME="shullfer Coverage Results" MODIFIED="1509883414663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat.coverage" NAME="pretreat Coverage Results" MODIFIED="1509882727403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$train.coverage" NAME="train Coverage Results" MODIFIED="1509884409825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1509715388856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$split.coverage" NAME="split Coverage Results" MODIFIED="1509680217958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$generateWord2Vec.coverage" NAME="generateWord2Vec Coverage Results" MODIFIED="1509852767120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$split.coverage" NAME="split Coverage Results" MODIFIED="1509883601755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$generateWord2Vec.coverage" NAME="generateWord2Vec Coverage Results" MODIFIED="1509884320185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat__1_.coverage" NAME="pretreat (1) Coverage Results" MODIFIED="1509680206324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$dataAnalyze.coverage" NAME="dataAnalyze Coverage Results" MODIFIED="1509881076064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -31,8 +92,8 @@
       <file leaf-file-name="pretreat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="3450">
+              <caret line="159" column="17" lean-forward="true" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -41,11 +102,19 @@
       <file leaf-file-name="generateWord2Vec.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="split.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,32 +122,10 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding>
-                <element signature="e#42#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149575">
-              <caret line="5983" column="7" lean-forward="false" selection-start-line="5983" selection-start-column="5" selection-end-line="5983" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChnSentiCorp/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#47#0" expanded="true" />
+                <element signature="e#43#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,6 +147,9 @@
       <find>saveTrainingInfo</find>
       <find>saveTrainingData</find>
       <find>.vec</find>
+      <find>一般</find>
+      <find>print</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,12 +167,22 @@
         <option value="$PROJECT_DIR$/ChnSentiCorp/train.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all.txt" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/data/all.txt" />
-        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/train.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/pretreat.py" />
-        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/stopwords.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/stopwords_new.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/data/seg/all_cut.txt" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/data/seg/neg.txt" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/stopwords.txt" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/data/seg/neg_cut.txt" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/segProcess.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/dataAnalyze.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
       </list>
     </option>
   </component>
@@ -213,7 +273,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6000" />
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word2vec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChnSentiCorp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChnSentiCorp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10-fold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChnSentiCorp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10-fold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,13 +352,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\data\word2vec" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\word2vec" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\shuffledata" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\traindata" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\seg" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\word2vec" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\maxlen" />
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\data\stopwords" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold" />
-      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.generateWord2Vec">
+  <component name="RunManager" selected="Python.train">
     <configuration default="false" name="pretreat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,7 +399,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="pretreat (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="shullfer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -280,7 +412,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SentimentAnalysis" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\shullfer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,7 +437,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -493,18 +625,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.pretreat" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pretreat (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.shullfer" />
       <item index="2" class="java.lang.String" itemvalue="Python.split" />
-      <item index="3" class="java.lang.String" itemvalue="Python.train (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.train" />
       <item index="4" class="java.lang.String" itemvalue="Python.generateWord2Vec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.generateWord2Vec" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pretreat" />
-        <item index="2" class="java.lang.String" itemvalue="Python.train (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.split" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pretreat (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.train" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generateWord2Vec" />
+        <item index="2" class="java.lang.String" itemvalue="Python.split" />
+        <item index="3" class="java.lang.String" itemvalue="Python.shullfer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pretreat" />
       </list>
     </recent_temporary>
   </component>
@@ -525,11 +657,11 @@
     <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20915033" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29411766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -575,191 +707,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="103" column="27" lean-forward="true" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-          <folding>
-            <element signature="e#42#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6025">
-          <caret line="241" column="20" lean-forward="false" selection-start-line="241" selection-start-column="4" selection-end-line="241" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#25#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="554" column="0" lean-forward="false" selection-start-line="554" selection-start-column="0" selection-end-line="554" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="5995" column="0" lean-forward="true" selection-start-line="5995" selection-start-column="0" selection-end-line="5995" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/training.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1250.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1251.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1252.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1242.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1243.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/pos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74413">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.13.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.12.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python/Python36/Lib/site-packages/tensorflow/contrib/keras/python/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2535">
-          <caret line="848" column="41" lean-forward="false" selection-start-line="848" selection-start-column="25" selection-end-line="848" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python/Python36/Lib/site-packages/keras/wrappers/scikit_learn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="170" column="6" lean-forward="false" selection-start-line="170" selection-start-column="6" selection-end-line="170" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python/Python36/Lib/site-packages/sklearn/model_selection/_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3935">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/pos_cut.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -823,56 +775,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/neg.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="2983" column="8" lean-forward="false" selection-start-line="2983" selection-start-column="8" selection-end-line="2983" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/neg_cut.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39358">
-          <caret line="1369" column="0" lean-forward="true" selection-start-line="1369" selection-start-column="0" selection-end-line="1369" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/training.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training-shuffle.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/0.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-128.model">
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/shuffledata/training-shuffle-128.data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -887,32 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="5995" column="127" lean-forward="false" selection-start-line="5995" selection-start-column="127" selection-end-line="5995" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-100.model">
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-100.model">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149575">
-          <caret line="5983" column="7" lean-forward="false" selection-start-line="5983" selection-start-column="5" selection-end-line="5983" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,20 +802,287 @@
         <state relative-caret-position="175">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#25#47#0" expanded="true" />
+            <element signature="e#25#47#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-50.vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/中文停用词库.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/哈工大停用词表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/四川大学机器智能实验室停用词库.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/百度停用词列表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96724">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/pos_cut.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74588">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="68" lean-forward="false" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/all.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/pos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74363">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/all.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74549">
+          <caret line="2999" column="27" lean-forward="true" selection-start-line="2999" selection-start-column="27" selection-end-line="2999" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/training.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="13861" column="21" lean-forward="true" selection-start-line="13861" selection-start-column="21" selection-end-line="13861" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/training.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/stopwords/stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49978">
+          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/stopwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/neg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73275">
+          <caret line="2931" column="17" lean-forward="false" selection-start-line="2931" selection-start-column="0" selection-end-line="2932" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/neg_cut.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74975">
+          <caret line="2999" column="41" lean-forward="false" selection-start-line="2999" selection-start-column="41" selection-end-line="2999" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/figure/seglen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/dataAnalyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/0.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-128.model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/trainData/training-100.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/trainData/training-100.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-50.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/segProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="70" column="7" lean-forward="false" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/shuffledata/training-shuffle-150.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/all_cut.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python/Python36/Lib/site-packages/gensim/models/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="1587" column="8" lean-forward="false" selection-start-line="1587" selection-start-column="8" selection-end-line="1587" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-75.model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="3450">
+          <caret line="159" column="17" lean-forward="true" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/word2vec-50.vector">
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-50.model">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -944,21 +1092,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
           <folding>
-            <element signature="e#42#55#0" expanded="true" />
+            <element signature="e#43#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all-128.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="5983" column="7" lean-forward="false" selection-start-line="5983" selection-start-column="5" selection-end-line="5983" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

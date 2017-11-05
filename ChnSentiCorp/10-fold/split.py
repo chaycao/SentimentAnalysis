@@ -28,11 +28,14 @@ def saveTrainingData(path, trainingData):
     fd.create_dataset('Y', data=Y)
     fd.close()
 
-path = './data/training-shuffle.data'
-X, Y = loadTrainingData(path)
-for i in range(10):
-    x = X[i*600 : (i+1)*600]
-    y = Y[i * 600: (i + 1) * 600]
-    print(np.array(x).shape)
-    print(np.array(y).shape)
-    saveTrainingData('./data/10/'+str(i)+'.data', (x,y))
+def splitdata(maxlen):
+    path = './data/shuffledata/training-shuffle-'+str(maxlen)+'.data'
+    X, Y = loadTrainingData(path)
+    for i in range(10):
+        x = X[i*600 : (i+1)*600]
+        y = Y[i * 600: (i + 1) * 600]
+        print(np.array(x).shape)
+        print(np.array(y).shape)
+        saveTrainingData('./data/seg/'+str(maxlen)+'/'+str(i)+'.data', (x,y))
+
+splitdata(150)
