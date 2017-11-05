@@ -10,7 +10,6 @@ from gensim.models.word2vec import LineSentence
 import time
 from gensim.models import Word2Vec
 import multiprocessing
-import multiprocessing
 import time
 import h5py
 import numpy as np
@@ -24,7 +23,7 @@ from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
 from keras.callbacks import EarlyStopping
-from gensim.models import Word2Vec
+
 
 
 '''
@@ -99,24 +98,6 @@ def merge():
             print(len(line))
             outFile.write(line + '\n')
 
-def word2vec():
-    start_time = time.time()
-    input_file = './data/all.txt'
-    output_model_file = './data/word2vec-100.model'
-    output_vector_file = './data/word2vec-100.vector'
-
-    model = Word2Vec(LineSentence(input_file), size=100, window=5, min_count=5,
-                     workers=multiprocessing.cpu_count())
-
-    # trim unneeded model memory = use(much) less RAM
-    # model.init_sims(replace=True)
-    model.save(output_model_file)
-    model.wv.save_word2vec_format(output_vector_file, binary=False)
-
-    end_time = time.time()
-    print("used time : %d s" % (end_time - start_time))
-
-word2vec()
 #-------------------------- 词典统计 --------------------------------------------------#
 
 retain_unknown = 'retain-unknown'

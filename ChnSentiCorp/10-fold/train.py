@@ -65,7 +65,7 @@ start_time = time.time()
 vocabSize = len(vocab) + 1
 w2vModel = Word2Vec.load(word2vec_model_file)
 embeddingDim = w2vModel.vector_size
-print('词向量：'+embeddingDim)
+print('词向量：'+str(embeddingDim))
 embeddingUnknown = [0 for i in range(embeddingDim)]
 embeddingWeights = np.zeros((vocabSize + 1, embeddingDim))
 for word, index in vocab.items():
@@ -101,7 +101,7 @@ for i in range(10):
     model.add(Bidirectional(LSTM(output_dim=100, return_sequences=False), merge_mode='sum'))
     model.add(Dropout(0.5))
     model.add(Dense(1, activation="sigmoid"))
-    print(model.summary())
+    #print(model.summary())
 
     # 自定义f1值
     def recall(y_true, y_pred):
