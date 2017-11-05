@@ -38,4 +38,4 @@ def splitdata(maxlen):
         print(np.array(y).shape)
         saveTrainingData('./data/seg/'+str(maxlen)+'/'+str(i)+'.data', (x,y))
 
-splitdata(150)
+splitdata(25)

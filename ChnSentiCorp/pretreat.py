@@ -157,4 +157,4 @@ def dictGenerate(maxlen):
     end_time = time.time()
     print("used time : %d s" % (end_time - start_time))
 
-dictGenerate(150)
+dictGenerate(25)

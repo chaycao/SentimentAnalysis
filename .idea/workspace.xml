@@ -2,70 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf04879-a74a-4335-bf78-0c1c15122140" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-100.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-100.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-125.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-125.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-150.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-150.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-50.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-50.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-75.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-75.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-75.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/中文停用词库.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/哈工大停用词表.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/四川大学机器智能实验室停用词库.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/stopwords/百度停用词列表.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-150.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-200.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-250.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-50.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/dataAnalyze.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/segProcess.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/stopwords.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/all.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/neg_cut.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/pos_cut.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/training.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/training.info" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-25.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-25.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-25.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/result/结果.xlsx" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/result/结果.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" afterPath="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/0.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/0.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/1.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/1.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/2.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/2.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/3.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/3.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/4.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/4.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/5.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/5.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/6.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/6.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/7.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/7.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/8.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/8.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/10/9.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/seg/128/9.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/all-128.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training-shuffle.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/shuffledata/training-shuffle-128.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training.data" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/training.info" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-128.info" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-100.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-100.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec-128.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-128.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/neg.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/seg/neg.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/pos.txt" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/seg/pos.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-100.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-100.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-100.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-100.vector" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-128.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-128.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-128.vector" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-150.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-150.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-150.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-150.vector" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-200.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-200.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-200.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-200.vector" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-250.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-250.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-250.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-250.vector" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-50.model" afterPath="$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-50.model" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec-50.vector" afterPath="$PROJECT_DIR$/ChnSentiCorp/data/word2vec/word2vec-50.vector" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,12 +22,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SentimentAnalysis$stopwords.coverage" NAME="stopwords Coverage Results" MODIFIED="1509871141233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$segProcess.coverage" NAME="segProcess Coverage Results" MODIFIED="1509879140498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$shullfer.coverage" NAME="shullfer Coverage Results" MODIFIED="1509883414663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat.coverage" NAME="pretreat Coverage Results" MODIFIED="1509882727403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$shullfer.coverage" NAME="shullfer Coverage Results" MODIFIED="1509886279569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$train.coverage" NAME="train Coverage Results" MODIFIED="1509884409825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat.coverage" NAME="pretreat Coverage Results" MODIFIED="1509886218708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1509715388856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$split.coverage" NAME="split Coverage Results" MODIFIED="1509883601755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
-    <SUITE FILE_PATH="coverage/SentimentAnalysis$generateWord2Vec.coverage" NAME="generateWord2Vec Coverage Results" MODIFIED="1509884320185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$split.coverage" NAME="split Coverage Results" MODIFIED="1509886302115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
+    <SUITE FILE_PATH="coverage/SentimentAnalysis$generateWord2Vec.coverage" NAME="generateWord2Vec Coverage Results" MODIFIED="1509886171796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$pretreat__1_.coverage" NAME="pretreat (1) Coverage Results" MODIFIED="1509680206324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp/10-fold" />
     <SUITE FILE_PATH="coverage/SentimentAnalysis$dataAnalyze.coverage" NAME="dataAnalyze Coverage Results" MODIFIED="1509881076064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ChnSentiCorp" />
   </component>
@@ -92,28 +37,38 @@
       <file leaf-file-name="pretreat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3450">
-              <caret line="159" column="17" lean-forward="true" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+            <state relative-caret-position="327">
+              <caret line="159" column="16" lean-forward="true" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generateWord2Vec.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shullfer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generateWord2Vec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="177">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="split.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="split.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="552">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -122,7 +77,7 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="55">
               <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding>
                 <element signature="e#43#56#0" expanded="true" />
@@ -178,11 +133,11 @@
         <option value="$PROJECT_DIR$/ChnSentiCorp/data/seg/neg_cut.txt" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/segProcess.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/dataAnalyze.py" />
-        <option value="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" />
-        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py" />
         <option value="$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py" />
-        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/pretreat.py" />
+        <option value="$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py" />
       </list>
     </option>
   </component>
@@ -277,28 +232,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="word2vec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SentimentAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SentimentAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChnSentiCorp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="seg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -343,6 +276,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChnSentiCorp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10-fold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -360,11 +319,11 @@
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\seg" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\traindata" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data\word2vec" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\maxlen" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\data\stopwords" />
       <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp\10-fold\data" />
-      <recent name="E:\PycharmProjects\SentimentAnalysis\ChnSentiCorp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -379,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.split">
     <configuration default="false" name="pretreat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -632,11 +591,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.train" />
-        <item index="1" class="java.lang.String" itemvalue="Python.generateWord2Vec" />
-        <item index="2" class="java.lang.String" itemvalue="Python.split" />
-        <item index="3" class="java.lang.String" itemvalue="Python.shullfer" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pretreat" />
+        <item index="0" class="java.lang.String" itemvalue="Python.split" />
+        <item index="1" class="java.lang.String" itemvalue="Python.shullfer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pretreat" />
+        <item index="3" class="java.lang.String" itemvalue="Python.generateWord2Vec" />
+        <item index="4" class="java.lang.String" itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -654,19 +613,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1456" height="876" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29411766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29411766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -712,20 +670,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/6000/neg/neg.15.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1034,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/data/seg/all_cut.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1074,29 +1002,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3450">
-          <caret line="159" column="17" lean-forward="true" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-50.model">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="e#43#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,10 +1018,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding>
+            <element signature="e#43#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/word2vec/word2vec-25.model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ChnSentiCorp/generateWord2Vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="177">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/data/traindata/training-25.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/pretreat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="159" column="16" lean-forward="true" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/shullfer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChnSentiCorp/10-fold/split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding />
         </state>
       </provider>
