@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 '''
 10折交叉训练数据
@@ -12,15 +11,16 @@ import numpy as np
 import random
 import time
 from gensim.models import Word2Vec
-from keras.models import Sequential, model_from_json
+from keras.models import Sequential, model_from_json, load_model
 from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
-from keras.callbacks import EarlyStopping,Callback
+from keras.callbacks import EarlyStopping,Callback,ModelCheckpoint
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 import sys
 from keras import backend as K
+from attention import Attention_layer
 
 def loadTrainingData(path):
     '''载入分词训练输入样本'''
@@ -104,10 +104,11 @@ for i in range(10):
     model = Sequential()
     model.add(Embedding(output_dim=embeddingDim, input_dim=vocabSize + 1,
                         input_length=maxlen, mask_zero=True, weights=[embeddingWeights]))
-    model.add(Bidirectional(LSTM(output_dim=100, return_sequences=False), merge_mode='sum'))
+    model.add(Bidirectional(LSTM(units=100, return_sequences=True), merge_mode='sum'))
+    model.add(Attention_layer())
     model.add(Dropout(0.5))
     model.add(Dense(1, activation="sigmoid"))
-    #print(model.summary())
+    print(model.summary())
 
     # 自定义f1值
     def recall(y_true, y_pred):
@@ -159,10 +160,16 @@ for i in range(10):
     model.compile(loss="binary_crossentropy", optimizer='adam', metrics=[recall, precision, f1])
     
     early_stopping = EarlyStopping(monitor="val_f1", patience=3, mode='max')
+    model_checkpoint = ModelCheckpoint('./model/weights-' + str(i) + '.hdf5', monitor='val_f1',save_best_only=True)
     result = model.fit(Train_X, Train_Y, batch_size=128,
                        epochs=100,
                        validation_data=(Test_X, Test_Y),
-                       callbacks=[early_stopping])
+                       callbacks=[early_stopping,model_checkpoint])
+    model_test = load_model('./model/weights-' + str(i) + '.hdf5')
+    # BILSTM给出的分数
+    lstm_result = model_test.predict(Test_X)
+    # 情感字典得分
+
 print("Train used time : ", time.time() - start_time)
     #sys.stdout.flush()
 #sys.stdout.close()
