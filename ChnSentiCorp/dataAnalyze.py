@@ -38,9 +38,10 @@ def lineWordMaxLenF1():
         0.90257,
         0.90182,
         0.90183,
-        0.89733]
+        0.89733,
+        0.90015]
     f1= np.array(f1)
-    maxlen = np.linspace(25,225,9)
+    maxlen = np.linspace(25,250,10)
     plt.figure()
     plt.plot(maxlen, f1, '-o')
     plt.xlim((0, 275))
@@ -50,5 +51,32 @@ def lineWordMaxLenF1():
     plt.title('MaxLen对F1的影响')
     plt.savefig('./figure/MaxLen.png', dpi=600)
     plt.show()
-    
-lineWordMaxLenF1()
+
+def lineWordMaxLenTime():
+    '''
+    MaxLen对F1的影响
+    '''
+    f1 = [
+        436,
+        818,
+        1337,
+        1487,
+        1716,
+        3237,
+        3411,
+        4578,
+        13696,
+        12516]
+    f1= np.array(f1)
+    maxlen = np.linspace(25,250,10)
+    plt.figure()
+    plt.plot(maxlen, f1, '-o')
+    plt.xlim((0, 275))
+    plt.xticks(np.linspace(0, 250, 11))
+    plt.xlabel('MaxLen')
+    plt.ylabel('时间(s)')
+    plt.title('MaxLen对时间的影响')
+    plt.savefig('./figure/MaxLenTime.png', dpi=600)
+    plt.show()
+
+lineWordMaxLenTime()

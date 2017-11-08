@@ -1,0 +1,210 @@
+词向量：100
+------- 1次 -------
+D:/caoyu/SentimentAnalysis/ChnSentiCorp/10-fold/train.py:107: UserWarning: Update your `LSTM` call to the Keras 2 API: `LSTM(return_sequences=False, units=100)`
+  model.add(Bidirectional(LSTM(output_dim=100, return_sequences=False), merge_mode='sum'))
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 131s - loss: 0.5548 - recall: 0.7604 - precision: 0.6865 - f1: nan - val_loss: 0.3197 - val_recall: 0.8656 - val_precision: 0.8708 - val_f1: 0.8675
+Epoch 2/100
+5400/5400 [==============================] - 169s - loss: 0.3577 - recall: 0.8725 - precision: 0.8656 - f1: 0.8650 - val_loss: 0.3461 - val_recall: 0.8507 - val_precision: 0.8507 - val_f1: 0.8500
+Epoch 3/100
+5400/5400 [==============================] - 176s - loss: 0.1882 - recall: 0.9421 - precision: 0.9217 - f1: 0.9309 - val_loss: 0.2977 - val_recall: 0.8503 - val_precision: 0.8834 - val_f1: 0.8665
+Epoch 4/100
+5400/5400 [==============================] - 175s - loss: 0.1052 - recall: 0.9695 - precision: 0.9644 - f1: 0.9663 - val_loss: 0.3026 - val_recall: 0.9210 - val_precision: 0.8596 - val_f1: 0.8891
+Epoch 5/100
+5400/5400 [==============================] - 179s - loss: 0.0553 - recall: 0.9867 - precision: 0.9807 - f1: 0.9835 - val_loss: 0.3284 - val_recall: 0.8798 - val_precision: 0.8798 - val_f1: 0.8796
+Epoch 6/100
+5400/5400 [==============================] - 182s - loss: 0.0403 - recall: 0.9854 - precision: 0.9891 - f1: 0.9868 - val_loss: 0.5843 - val_recall: 0.5735 - val_precision: 0.9350 - val_f1: 0.7091
+Epoch 7/100
+5400/5400 [==============================] - 183s - loss: 0.0938 - recall: 0.9772 - precision: 0.9681 - f1: 0.9712 - val_loss: 0.3562 - val_recall: 0.8180 - val_precision: 0.9130 - val_f1: 0.8612
+Epoch 8/100
+5400/5400 [==============================] - 183s - loss: 0.0275 - recall: 0.9936 - precision: 0.9940 - f1: 0.9937 - val_loss: 0.3856 - val_recall: 0.8973 - val_precision: 0.8740 - val_f1: 0.8852
+------- 2次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 204s - loss: 0.5906 - recall: 0.7125 - precision: 0.7321 - f1: nan - val_loss: 0.3742 - val_recall: 0.8764 - val_precision: 0.7907 - val_f1: 0.8291
+Epoch 2/100
+5400/5400 [==============================] - 192s - loss: 0.4117 - recall: 0.8952 - precision: 0.8409 - f1: 0.8576 - val_loss: 0.4068 - val_recall: 0.8753 - val_precision: 0.8089 - val_f1: 0.8402
+Epoch 3/100
+5400/5400 [==============================] - 191s - loss: 0.2495 - recall: 0.9285 - precision: 0.9033 - f1: 0.9148 - val_loss: 0.3319 - val_recall: 0.9075 - val_precision: 0.8112 - val_f1: 0.8550
+Epoch 4/100
+5400/5400 [==============================] - 191s - loss: 0.1376 - recall: 0.9646 - precision: 0.9513 - f1: 0.9575 - val_loss: 0.2905 - val_recall: 0.9037 - val_precision: 0.8559 - val_f1: 0.8785
+Epoch 5/100
+5400/5400 [==============================] - 193s - loss: 0.1303 - recall: 0.9603 - precision: 0.9633 - f1: 0.9600 - val_loss: 0.3460 - val_recall: 0.9308 - val_precision: 0.7979 - val_f1: 0.8586
+Epoch 6/100
+5400/5400 [==============================] - 192s - loss: 0.0844 - recall: 0.9895 - precision: 0.9699 - f1: 0.9794 - val_loss: 0.3046 - val_recall: 0.8893 - val_precision: 0.8607 - val_f1: 0.8742
+Epoch 7/100
+5400/5400 [==============================] - 192s - loss: 0.0484 - recall: 0.9908 - precision: 0.9845 - f1: 0.9876 - val_loss: 0.3358 - val_recall: 0.9003 - val_precision: 0.8538 - val_f1: 0.8757
+Epoch 8/100
+5400/5400 [==============================] - 193s - loss: 0.0331 - recall: 0.9963 - precision: 0.9892 - f1: 0.9927 - val_loss: 0.3503 - val_recall: 0.8847 - val_precision: 0.8776 - val_f1: 0.8807
+Epoch 9/100
+5400/5400 [==============================] - 193s - loss: 0.0236 - recall: 0.9971 - precision: 0.9923 - f1: 0.9946 - val_loss: 0.3751 - val_recall: 0.8923 - val_precision: 0.8698 - val_f1: 0.8804
+Epoch 10/100
+5400/5400 [==============================] - 192s - loss: 0.0142 - recall: 0.9989 - precision: 0.9945 - f1: 0.9967 - val_loss: 0.3994 - val_recall: 0.8658 - val_precision: 0.8921 - val_f1: 0.8786
+Epoch 11/100
+5400/5400 [==============================] - 192s - loss: 0.0119 - recall: 0.9987 - precision: 0.9950 - f1: 0.9968 - val_loss: 0.4272 - val_recall: 0.8846 - val_precision: 0.8695 - val_f1: 0.8764
+Epoch 12/100
+5400/5400 [==============================] - 193s - loss: 0.0069 - recall: 0.9997 - precision: 0.9978 - f1: 0.9987 - val_loss: 0.4508 - val_recall: 0.8803 - val_precision: 0.8771 - val_f1: 0.8784
+------- 3次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 200s - loss: 0.5827 - recall: 0.6657 - precision: 0.6715 - f1: nan - val_loss: 0.3301 - val_recall: 0.8618 - val_precision: 0.8907 - val_f1: 0.8756
+Epoch 2/100
+5400/5400 [==============================] - 186s - loss: 0.3410 - recall: 0.8945 - precision: 0.8633 - f1: 0.8756 - val_loss: 0.3150 - val_recall: 0.8211 - val_precision: 0.9046 - val_f1: 0.8601
+Epoch 3/100
+5400/5400 [==============================] - 186s - loss: 0.1864 - recall: 0.9365 - precision: 0.9303 - f1: 0.9329 - val_loss: 0.2530 - val_recall: 0.8699 - val_precision: 0.8827 - val_f1: 0.8755
+Epoch 4/100
+5400/5400 [==============================] - 187s - loss: 0.0996 - recall: 0.9704 - precision: 0.9652 - f1: 0.9673 - val_loss: 0.2502 - val_recall: 0.8727 - val_precision: 0.9180 - val_f1: 0.8941
+Epoch 5/100
+5400/5400 [==============================] - 187s - loss: 0.0544 - recall: 0.9888 - precision: 0.9793 - f1: 0.9838 - val_loss: 0.2655 - val_recall: 0.8932 - val_precision: 0.9143 - val_f1: 0.9026
+Epoch 6/100
+5400/5400 [==============================] - 187s - loss: 0.0290 - recall: 0.9940 - precision: 0.9911 - f1: 0.9925 - val_loss: 0.3034 - val_recall: 0.9212 - val_precision: 0.8955 - val_f1: 0.9072
+Epoch 7/100
+5400/5400 [==============================] - 186s - loss: 0.0180 - recall: 0.9963 - precision: 0.9939 - f1: 0.9950 - val_loss: 0.3456 - val_recall: 0.8972 - val_precision: 0.8966 - val_f1: 0.8960
+Epoch 8/100
+5400/5400 [==============================] - 187s - loss: 0.0142 - recall: 0.9966 - precision: 0.9960 - f1: 0.9963 - val_loss: 0.3358 - val_recall: 0.9109 - val_precision: 0.9107 - val_f1: 0.9097
+Epoch 9/100
+5400/5400 [==============================] - 187s - loss: 0.0097 - recall: 0.9993 - precision: 0.9957 - f1: 0.9975 - val_loss: 0.4112 - val_recall: 0.8963 - val_precision: 0.8956 - val_f1: 0.8941
+Epoch 10/100
+5400/5400 [==============================] - 179s - loss: 0.0057 - recall: 1.0000 - precision: 0.9989 - f1: 0.9994 - val_loss: 0.4435 - val_recall: 0.8668 - val_precision: 0.9197 - val_f1: 0.8905
+Epoch 11/100
+5400/5400 [==============================] - 172s - loss: 0.0032 - recall: 1.0000 - precision: 0.9988 - f1: 0.9994 - val_loss: 0.4881 - val_recall: 0.8858 - val_precision: 0.9244 - val_f1: 0.9030
+Epoch 12/100
+5400/5400 [==============================] - 187s - loss: 0.0022 - recall: 1.0000 - precision: 0.9996 - f1: 0.9998 - val_loss: 0.5243 - val_recall: 0.8891 - val_precision: 0.9122 - val_f1: 0.8988
+------- 4次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 176s - loss: 0.5704 - recall: 0.7153 - precision: 0.7736 - f1: nan - val_loss: 0.3775 - val_recall: 0.8829 - val_precision: 0.8238 - val_f1: 0.8518
+Epoch 2/100
+5400/5400 [==============================] - 167s - loss: 0.4436 - recall: 0.8863 - precision: 0.8055 - f1: nan - val_loss: 0.3402 - val_recall: 0.8734 - val_precision: 0.8331 - val_f1: 0.8515
+Epoch 3/100
+5400/5400 [==============================] - 167s - loss: 0.1856 - recall: 0.9369 - precision: 0.9302 - f1: 0.9321 - val_loss: 0.2914 - val_recall: 0.8373 - val_precision: 0.8913 - val_f1: 0.8627
+Epoch 4/100
+5400/5400 [==============================] - 166s - loss: 0.0843 - recall: 0.9780 - precision: 0.9683 - f1: 0.9729 - val_loss: 0.3173 - val_recall: 0.8470 - val_precision: 0.9068 - val_f1: 0.8742
+Epoch 5/100
+5400/5400 [==============================] - 168s - loss: 0.0452 - recall: 0.9914 - precision: 0.9844 - f1: 0.9878 - val_loss: 0.3545 - val_recall: 0.8770 - val_precision: 0.8935 - val_f1: 0.8844
+Epoch 6/100
+5400/5400 [==============================] - 166s - loss: 0.0281 - recall: 0.9938 - precision: 0.9912 - f1: 0.9924 - val_loss: 0.3863 - val_recall: 0.8836 - val_precision: 0.8851 - val_f1: 0.8826
+Epoch 7/100
+5400/5400 [==============================] - 167s - loss: 0.0182 - recall: 0.9960 - precision: 0.9944 - f1: 0.9951 - val_loss: 0.4549 - val_recall: 0.8770 - val_precision: 0.8839 - val_f1: 0.8792
+Epoch 8/100
+5400/5400 [==============================] - 167s - loss: 0.0196 - recall: 0.9937 - precision: 0.9965 - f1: 0.9951 - val_loss: 0.4612 - val_recall: 0.8873 - val_precision: 0.8691 - val_f1: 0.8774
+Epoch 9/100
+5400/5400 [==============================] - 166s - loss: 0.0133 - recall: 0.9978 - precision: 0.9955 - f1: 0.9966 - val_loss: 0.4856 - val_recall: 0.8415 - val_precision: 0.9043 - val_f1: 0.8701
+------- 5次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 101s - loss: 0.6451 - recall: 0.5608 - precision: 0.7084 - f1: nan - val_loss: 0.5387 - val_recall: 0.9313 - val_precision: 0.6750 - val_f1: 0.7813
+Epoch 2/100
+5400/5400 [==============================] - 90s - loss: 0.4071 - recall: 0.8936 - precision: 0.8473 - f1: 0.8667 - val_loss: 0.3394 - val_recall: 0.9078 - val_precision: 0.8193 - val_f1: 0.8603
+Epoch 3/100
+5400/5400 [==============================] - 89s - loss: 0.1967 - recall: 0.9377 - precision: 0.9213 - f1: 0.9288 - val_loss: 0.2637 - val_recall: 0.8463 - val_precision: 0.9278 - val_f1: 0.8843
+Epoch 4/100
+5400/5400 [==============================] - 89s - loss: 0.0922 - recall: 0.9751 - precision: 0.9657 - f1: 0.9702 - val_loss: 0.2558 - val_recall: 0.8744 - val_precision: 0.9122 - val_f1: 0.8923
+Epoch 5/100
+5400/5400 [==============================] - 88s - loss: 0.0486 - recall: 0.9881 - precision: 0.9859 - f1: 0.9868 - val_loss: 0.2874 - val_recall: 0.9028 - val_precision: 0.8861 - val_f1: 0.8936
+Epoch 6/100
+5400/5400 [==============================] - 89s - loss: 0.0284 - recall: 0.9940 - precision: 0.9926 - f1: 0.9932 - val_loss: 0.3244 - val_recall: 0.8619 - val_precision: 0.9109 - val_f1: 0.8850
+Epoch 7/100
+5400/5400 [==============================] - 89s - loss: 0.0169 - recall: 0.9972 - precision: 0.9952 - f1: 0.9962 - val_loss: 0.4095 - val_recall: 0.8891 - val_precision: 0.8818 - val_f1: 0.8850
+Epoch 8/100
+5400/5400 [==============================] - 82s - loss: 0.0116 - recall: 0.9975 - precision: 0.9959 - f1: 0.9966 - val_loss: 0.4479 - val_recall: 0.8713 - val_precision: 0.9021 - val_f1: 0.8862
+Epoch 9/100
+5400/5400 [==============================] - 74s - loss: 0.0080 - recall: 0.9978 - precision: 0.9982 - f1: 0.9980 - val_loss: 0.4471 - val_recall: 0.8961 - val_precision: 0.8887 - val_f1: 0.8921
+------- 6次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 111s - loss: 0.6101 - recall: 0.8107 - precision: 0.7016 - f1: nan - val_loss: 0.4912 - val_recall: 0.9323 - val_precision: 0.7978 - val_f1: 0.8591
+Epoch 2/100
+5400/5400 [==============================] - 102s - loss: 0.3398 - recall: 0.8947 - precision: 0.8531 - f1: 0.8716 - val_loss: 0.2546 - val_recall: 0.9094 - val_precision: 0.8899 - val_f1: 0.8989
+Epoch 3/100
+5400/5400 [==============================] - 92s - loss: 0.2355 - recall: 0.9178 - precision: 0.9183 - f1: 0.9120 - val_loss: 0.2622 - val_recall: 0.9415 - val_precision: 0.8708 - val_f1: 0.9047
+Epoch 4/100
+5400/5400 [==============================] - 103s - loss: 0.1254 - recall: 0.9719 - precision: 0.9605 - f1: 0.9658 - val_loss: 0.2417 - val_recall: 0.8828 - val_precision: 0.9095 - val_f1: 0.8955
+Epoch 5/100
+5400/5400 [==============================] - 94s - loss: 0.0655 - recall: 0.9865 - precision: 0.9796 - f1: 0.9829 - val_loss: 0.2639 - val_recall: 0.9344 - val_precision: 0.8887 - val_f1: 0.9107
+Epoch 6/100
+5400/5400 [==============================] - 87s - loss: 0.0372 - recall: 0.9951 - precision: 0.9878 - f1: 0.9914 - val_loss: 0.2847 - val_recall: 0.8927 - val_precision: 0.9137 - val_f1: 0.9026
+Epoch 7/100
+5400/5400 [==============================] - 97s - loss: 0.0239 - recall: 0.9964 - precision: 0.9925 - f1: 0.9944 - val_loss: 0.3502 - val_recall: 0.8963 - val_precision: 0.9030 - val_f1: 0.8988
+Epoch 8/100
+5400/5400 [==============================] - 76s - loss: 0.0285 - recall: 0.9965 - precision: 0.9902 - f1: 0.9931 - val_loss: 0.3243 - val_recall: 0.9128 - val_precision: 0.9015 - val_f1: 0.9063
+Epoch 9/100
+5400/5400 [==============================] - 68s - loss: 0.0121 - recall: 0.9986 - precision: 0.9970 - f1: 0.9978 - val_loss: 0.3808 - val_recall: 0.8901 - val_precision: 0.9141 - val_f1: 0.9013
+------- 7次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 75s - loss: 0.6223 - recall: 0.8386 - precision: 0.6590 - f1: nan - val_loss: 0.5227 - val_recall: 0.9337 - val_precision: 0.7325 - val_f1: 0.8205
+Epoch 2/100
+5400/5400 [==============================] - 62s - loss: 0.3629 - recall: 0.9035 - precision: 0.8525 - f1: 0.8749 - val_loss: 0.3323 - val_recall: 0.9082 - val_precision: 0.8243 - val_f1: 0.8628
+Epoch 3/100
+5400/5400 [==============================] - 63s - loss: 0.1822 - recall: 0.9462 - precision: 0.9274 - f1: 0.9359 - val_loss: 0.2773 - val_recall: 0.9118 - val_precision: 0.8939 - val_f1: 0.9013
+Epoch 4/100
+5400/5400 [==============================] - 81s - loss: 0.0936 - recall: 0.9668 - precision: 0.9707 - f1: 0.9682 - val_loss: 0.2815 - val_recall: 0.9249 - val_precision: 0.9032 - val_f1: 0.9127
+Epoch 5/100
+5400/5400 [==============================] - 88s - loss: 0.0419 - recall: 0.9918 - precision: 0.9857 - f1: 0.9886 - val_loss: 0.3438 - val_recall: 0.9156 - val_precision: 0.9098 - val_f1: 0.9113
+Epoch 6/100
+5400/5400 [==============================] - 90s - loss: 0.0222 - recall: 0.9951 - precision: 0.9921 - f1: 0.9935 - val_loss: 0.3733 - val_recall: 0.9057 - val_precision: 0.9054 - val_f1: 0.9039
+Epoch 7/100
+5400/5400 [==============================] - 86s - loss: 0.0146 - recall: 0.9961 - precision: 0.9956 - f1: 0.9958 - val_loss: 0.4011 - val_recall: 0.9154 - val_precision: 0.9007 - val_f1: 0.9062
+Epoch 8/100
+5400/5400 [==============================] - 89s - loss: 0.0094 - recall: 0.9984 - precision: 0.9970 - f1: 0.9977 - val_loss: 0.4879 - val_recall: 0.9050 - val_precision: 0.8869 - val_f1: 0.8935
+------- 8次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 103s - loss: 0.5595 - recall: 0.7793 - precision: 0.7267 - f1: nan - val_loss: 0.3518 - val_recall: 0.8918 - val_precision: 0.8827 - val_f1: 0.8855
+Epoch 2/100
+5400/5400 [==============================] - 94s - loss: 0.2231 - recall: 0.9198 - precision: 0.9083 - f1: 0.9127 - val_loss: 0.3674 - val_recall: 0.8836 - val_precision: 0.8855 - val_f1: 0.8841
+Epoch 3/100
+5400/5400 [==============================] - 91s - loss: 0.1242 - recall: 0.9736 - precision: 0.9491 - f1: 0.9609 - val_loss: 0.2537 - val_recall: 0.9116 - val_precision: 0.9257 - val_f1: 0.9183
+Epoch 4/100
+5400/5400 [==============================] - 93s - loss: 0.0536 - recall: 0.9886 - precision: 0.9833 - f1: 0.9858 - val_loss: 0.2914 - val_recall: 0.8934 - val_precision: 0.9304 - val_f1: 0.9109
+Epoch 5/100
+5400/5400 [==============================] - 95s - loss: 0.0275 - recall: 0.9955 - precision: 0.9919 - f1: 0.9936 - val_loss: 0.3420 - val_recall: 0.9055 - val_precision: 0.9130 - val_f1: 0.9089
+Epoch 6/100
+5400/5400 [==============================] - 90s - loss: 0.0179 - recall: 0.9974 - precision: 0.9939 - f1: 0.9956 - val_loss: 0.4180 - val_recall: 0.8680 - val_precision: 0.9310 - val_f1: 0.8975
+Epoch 7/100
+5400/5400 [==============================] - 90s - loss: 0.0125 - recall: 0.9982 - precision: 0.9959 - f1: 0.9970 - val_loss: 0.4506 - val_recall: 0.8618 - val_precision: 0.9218 - val_f1: 0.8900
+------- 9次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 112s - loss: 0.5775 - recall: 0.7139 - precision: 0.7268 - f1: nan - val_loss: 0.4863 - val_recall: 0.9014 - val_precision: 0.7415 - val_f1: 0.8128
+Epoch 2/100
+5400/5400 [==============================] - 100s - loss: 0.3680 - recall: 0.8969 - precision: 0.8539 - f1: 0.8725 - val_loss: 0.3570 - val_recall: 0.8194 - val_precision: 0.8650 - val_f1: 0.8413
+Epoch 3/100
+5400/5400 [==============================] - 98s - loss: 0.1911 - recall: 0.9360 - precision: 0.9342 - f1: 0.9346 - val_loss: 0.3232 - val_recall: 0.8535 - val_precision: 0.8896 - val_f1: 0.8709
+Epoch 4/100
+5400/5400 [==============================] - 100s - loss: 0.1461 - recall: 0.9645 - precision: 0.9542 - f1: 0.9572 - val_loss: 0.2970 - val_recall: 0.8801 - val_precision: 0.8856 - val_f1: 0.8825
+Epoch 5/100
+5400/5400 [==============================] - 94s - loss: 0.0727 - recall: 0.9839 - precision: 0.9718 - f1: 0.9776 - val_loss: 0.3342 - val_recall: 0.8835 - val_precision: 0.8917 - val_f1: 0.8874
+Epoch 6/100
+5400/5400 [==============================] - 95s - loss: 0.0402 - recall: 0.9926 - precision: 0.9838 - f1: 0.9881 - val_loss: 0.3785 - val_recall: 0.8834 - val_precision: 0.8860 - val_f1: 0.8845
+Epoch 7/100
+5400/5400 [==============================] - 98s - loss: 0.0254 - recall: 0.9966 - precision: 0.9908 - f1: 0.9936 - val_loss: 0.4182 - val_recall: 0.9000 - val_precision: 0.8853 - val_f1: 0.8922
+Epoch 8/100
+5400/5400 [==============================] - 98s - loss: 0.0174 - recall: 0.9977 - precision: 0.9937 - f1: 0.9957 - val_loss: 0.4841 - val_recall: 0.8930 - val_precision: 0.8908 - val_f1: 0.8916
+Epoch 9/100
+5400/5400 [==============================] - 97s - loss: 0.0093 - recall: 0.9996 - precision: 0.9957 - f1: 0.9976 - val_loss: 0.5220 - val_recall: 0.8754 - val_precision: 0.8915 - val_f1: 0.8830
+Epoch 10/100
+5400/5400 [==============================] - 100s - loss: 0.0060 - recall: 0.9997 - precision: 0.9989 - f1: 0.9993 - val_loss: 0.5602 - val_recall: 0.8929 - val_precision: 0.8815 - val_f1: 0.8868
+Epoch 11/100
+5400/5400 [==============================] - 96s - loss: 0.0042 - recall: 1.0000 - precision: 0.9986 - f1: 0.9993 - val_loss: 0.6109 - val_recall: 0.8890 - val_precision: 0.8877 - val_f1: 0.8880
+------- 10次 -------
+Train on 5400 samples, validate on 600 samples
+Epoch 1/100
+5400/5400 [==============================] - 112s - loss: 0.6171 - recall: 0.8458 - precision: 0.6916 - f1: nan - val_loss: 0.4407 - val_recall: 0.8702 - val_precision: 0.7955 - val_f1: 0.8307
+Epoch 2/100
+5400/5400 [==============================] - 94s - loss: 0.2690 - recall: 0.9160 - precision: 0.8885 - f1: 0.9002 - val_loss: 0.3361 - val_recall: 0.8725 - val_precision: 0.8470 - val_f1: 0.8591
+Epoch 3/100
+5400/5400 [==============================] - 97s - loss: 0.1237 - recall: 0.9662 - precision: 0.9511 - f1: 0.9582 - val_loss: 0.3008 - val_recall: 0.9023 - val_precision: 0.8998 - val_f1: 0.9007
+Epoch 4/100
+5400/5400 [==============================] - 100s - loss: 0.0565 - recall: 0.9879 - precision: 0.9806 - f1: 0.9841 - val_loss: 0.2981 - val_recall: 0.9332 - val_precision: 0.8883 - val_f1: 0.9101
+Epoch 5/100
+5400/5400 [==============================] - 99s - loss: 0.0326 - recall: 0.9947 - precision: 0.9906 - f1: 0.9926 - val_loss: 0.3493 - val_recall: 0.9166 - val_precision: 0.8787 - val_f1: 0.8970
+Epoch 6/100
+5400/5400 [==============================] - 98s - loss: 0.0205 - recall: 0.9970 - precision: 0.9944 - f1: 0.9957 - val_loss: 0.3732 - val_recall: 0.9001 - val_precision: 0.9089 - val_f1: 0.9043
+Epoch 7/100
+5400/5400 [==============================] - 100s - loss: 0.0319 - recall: 0.9942 - precision: 0.9913 - f1: 0.9926 - val_loss: 0.5010 - val_recall: 0.9072 - val_precision: 0.8849 - val_f1: 0.8953
+Epoch 8/100
+5400/5400 [==============================] - 99s - loss: 0.0148 - recall: 0.9982 - precision: 0.9959 - f1: 0.9970 - val_loss: 0.4451 - val_recall: 0.9007 - val_precision: 0.8908 - val_f1: 0.8954
+Train used time :  12516.68174123764
